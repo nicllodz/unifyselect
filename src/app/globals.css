@@ -1,0 +1,458 @@
+@import "tailwindcss";
+@import 'swiper/css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+.header-top {
+  padding-top: 8px;
+  padding-bottom: 22px;
+}
+.header-lower {
+  padding-top: 10px;
+}
+.lower-menu a:hover {
+  color: #597cbc;
+}
+.text-light-blue-theme {
+  color: #597cbc;
+}
+.text-blue-theme {
+  color: #2e3970;
+}
+.bg-blue-theme {
+  background-color: #2e3970;
+}
+.care-member-img {
+  width: 331px;
+}
+.hmContactSec input, 
+select,
+textarea {
+  width: 100%;
+  border: 2px solid #597cbc;
+  border-radius: 20px;
+  padding: 20px 30px;
+}
+.hmContactSec input::placeholder, .hmContactSec textarea::placeholder {
+  color: black;
+}
+.footer-title {
+  font-size: 26px;
+}
+.footer-text {
+  font-size: 16px;
+}
+.members-page {
+  .carenav-img {
+    width: 50%;
+  }
+  .carenav-left {
+    z-index: 2;
+  }
+  .care-member-img {
+    width: 780px;
+  }
+  .carenav-cont {
+    margin-top: 140px;
+    margin-bottom: 40px;
+  }
+}
+.employers-page {
+  .hero-section {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0;
+    padding-right: 100px;
+  }
+  .carenav-left {
+    width: 60%;
+  }
+  .carenav-img {
+    width: 40%;
+  }
+  .carenav-title {
+    font-size: 40px;
+  }
+  .carenav-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .care-member-img {
+    width: 550px;
+  }
+}
+.brokers-page {
+  .swap-col-section {
+    margin-top: 20px;
+  }
+  .title {
+    color: #2e3970;
+    font-weight: 700;
+  }
+  .hm-contact-map > div {
+    background-position: right center;
+  }
+}
+.associations-page {
+  .hero-section {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0;
+    padding-right: 100px;
+  }
+  .multigrid-imgs {
+    width: calc(var(--spacing) * 24);
+    height: calc(var(--spacing) * 29);
+  }
+  .multigrid-content {
+    width: 70%;
+    margin: auto;
+  }
+}
+.community-page {
+  .hero-con {
+    visibility: hidden;
+  }
+  .abtsection {
+    margin-top: 0;
+  }
+  .abtsection p {
+    margin-top: 5px;
+    padding: 0 50px;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+  .case-stud-sec {
+    padding-bottom: 30px;
+  }
+}
+/* hide temporary */
+.header-top, .footer-resources, .footer-company, .footer-mobile-app, .footer-social, .resources-section {
+  display: none;
+}
+
+@media only screen and (max-width: 1680px) {
+  .hero-con {
+    width: 50%;
+  }
+  .members-page .carenav-cont {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 1536px) {
+  .hero-con {
+    width: 52%;
+  }
+  .employers-page {
+    .carenav-left, .carenav-img {
+      width: 50%;
+    }
+    .care-member-img {
+      width: 623px;
+    }
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .hero-con {
+    width: 60%;
+  }
+  .employers-page .carenav-left {
+    padding: calc(var(--spacing) * 14);
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .members-page .carenav-img {
+    width: 60%;
+  }
+  .employers-page .employer-left-col {
+    padding: calc(var(--spacing) * 10);
+  }
+  .employers-page .carenav-left {
+    padding: calc(var(--spacing) * 10);
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .carenav-cont {
+    margin-top: 30px;
+  }
+  .carenav-left, .telehealth-con {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .hero-con {
+    width: 70%;
+  } 
+}
+@media only screen and (max-width: 1024px) {
+   .hero-con {
+    width: 100%;
+  }
+  .hm-contact-form {
+    padding: 40px;
+  }
+  .carenav-left {
+    padding-left: 40px;
+    h3 {
+      font-size: 25px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 18px;
+    }    
+  }
+  .telehealth-con {
+    padding-left: 40px;
+    h3 {
+      font-size: 25px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 18px;
+    }    
+  }
+  .lower-menu a {
+    font-size: 15px;
+  }
+  .header-top *{
+    font-size: 15px;
+  }
+  .hero-section {
+    background-position-x: right;
+  }
+  .copays-con {
+    h2 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 18px;
+    }    
+  }
+  .contact-left {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .resourcs-grid {
+    width: 100%;
+    gap: 30px;
+  }
+  .footer-top ul li {
+    font-size: 18px;
+  }
+  .footer-top h3 {
+    font-size: 22px;
+  }
+  .footer-bottom h4 {
+    font-size: 22px;
+  }
+  .footer-bottom p {
+    font-size: 18px;
+  }
+  .members-page .hero-section {
+    background-position-x: 70%;
+  }
+  .employers-page {
+    .employer-right-col {
+      height: 400px;
+    }
+    .swap-col-section {
+      gap: 30px;
+    }
+    .hero-section {
+      background-position-x: center;
+      padding-right: 0;
+    }
+    .text-col {
+      padding: calc(var(--spacing) * 5);
+    }    
+  }
+  .brokers-page {
+    .text-col {
+      padding: calc(var(--spacing) * 10);
+    }
+    .swap-col-section {
+      gap: 50px;
+    }
+    .icon-list-section {
+      padding-top: 0;
+    }
+  }
+  .associations-page {
+    .hero-section {
+      background-position-x: center;
+      padding-right: 0;
+    }
+    .text-col {
+      padding: calc(var(--spacing) * 10);
+    }
+    .swap-col-section {
+      gap: 50px;
+    }
+    .multigrid-content {
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .hero-section {
+    padding-left: 0;
+  }
+  .hero-con {
+    max-width: max-content;
+  }
+  .carenav-left {
+    width: 60%;
+    h3 {
+      font-size: 21px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    p {
+        font-size: 16px;
+    }
+  }
+  .telehealth-con {
+    h3 {
+      font-size: 21px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 16px;
+    }    
+  }
+  .carenav-img {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header-lower {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  .logo {
+    width: 55%;
+  }
+  .hero-con {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    p {
+      padding-right: 20px;
+    }
+  }
+  .hero-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-btn-2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .carenav-cont {
+    align-items: center;
+  }
+  .carenav-left {
+    width: 100%;
+    padding-right: 40px;
+    padding-bottom: 0;
+  }
+  .carenav-img {
+    width: 80%;
+    position: relative;
+    padding-right: 0px;
+  }
+  .telehealth-con {
+    padding-right: 40px !important;
+  }
+  .logo-footer {
+    width: 210px;
+    margin: auto;
+  }
+  .footer-social {
+    justify-content: center;
+  }
+  .solns-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .carenav-cont {
+    margin-top: 0;
+  }
+  .carenav-sect {
+    padding-bottom: 0;
+  }
+  .telehealth-sect {
+    padding-bottom: 0;
+  }
+  .members-page {
+    .abtsection {
+      margin-top: 0;
+    }
+    .carenav-cont {
+      margin-top: 0px;
+    }
+    .carenav-img {
+        width: 100%;
+    }
+    .hm-contact-map {
+      height: 350px;
+    }
+  }
+  .employers-page {
+    .employer-right-col {
+      height: 260px;
+    }
+    .icon-list-section {
+      padding-top: 0;
+    }
+    .carenav-left {
+      width: 100%;
+    }
+    .carenav-img {
+      width: 90%;
+    }
+    .carenav-left {
+      padding-bottom: 0;
+    }
+    .btn {
+      padding: 20px 35px;
+    }
+  }
+  .hmContactSec {
+    flex-direction: column-reverse;
+  }
+  .hm-contact-map {
+    height: 400px;
+  }
+}
