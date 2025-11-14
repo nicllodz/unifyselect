@@ -54,7 +54,7 @@ export default function IndividualsPage() {
                 standard business hours.
 
                 <div className="text-light-blue-theme font-bold mt-3">Same day and next-day service</div> 
-                Because our physician has reserved their time for a select few, there will be no "squeezing you in." 
+                Because our physician has reserved their time for a select few, there will be no &quot;squeezing you in.&quot; 
                 You&apos;re a priority, and you&apos;ll feel like one.
 
                 <div className="text-light-blue-theme font-bold mt-3">Concierge Service</div> 
