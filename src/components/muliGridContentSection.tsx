@@ -32,7 +32,7 @@ const BusinessSolutionsGrid: React.FC<BusinessSolutionsGridProps> = ({
         <h2 className="text-4xl md:text-[42px] font-[Lato] text-gray-900 mb-2">{title}</h2>
         <p className="text-2xl mb-12 text-light-blue-theme">{subtitle}</p>
 
-        <div className={`multigrid-content grid gap-8 sm:grid-cols-2 ${gridCols}`}>
+        <div className={`w-[70%] mx-auto multigrid-content grid gap-8 sm:grid-cols-2 ${gridCols}`}>
           {items.map((item, index) => (
             <div
               key={index}

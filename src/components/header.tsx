@@ -18,90 +18,22 @@ export default function Header() {
     setTimeout(() => hamburgerButtonRef.current?.focus(), 100);
   };
 
-  useEffect(() => {
-    const topHeader = document.querySelector(".header-top") as HTMLElement | null;
-
-    const handleScroll = () => {
-      const topHeight = topHeader?.offsetHeight || 0;
-      if (window.scrollY > topHeight) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <header className="bg-white">
-      {/* Top Row */}
-      <div className="bg-[#2e3970] flex justify-end font-[Montserrat] header-top">
-
-        {/* Right section */}
-        <div className="flex items-center space-x-6 pr-7 content-right">
-          {/* Dropdown: Resources - hidden on mobile */}
-          <div className="relative group z-10">
-            <button className="text-white font-light hover:text-[#597cbc]">
-              Resources ▾
-            </button>
-            <div className="absolute hidden group-hover:block bg-white shadow-lg rounded text-base w-32">
-              <Link href="/resources/guide" className="block px-4 py-2 hover:bg-gray-100 hover:rounded">
-                Guides
-              </Link>
-              <Link href="/resources/tools" className="block px-4 py-2 hover:bg-gray-100">
-                Tools
-              </Link>
-            </div>
-          </div>
-
-          {/* Dropdown: Company - hidden on mobile */}
-          <div className="relative group z-10">
-            <button className="text-white font-light hover:text-[#597cbc]">
-              Company ▾
-            </button>
-            <div className="absolute hidden group-hover:block bg-white shadow-lg rounded text-base w-32">
-              <Link href="/about" className="block px-4 py-2 hover:bg-gray-100 hover:rounded">
-                About Us
-              </Link>
-              <Link href="/careers" className="block px-4 py-2 hover:bg-gray-100">
-                Careers
-              </Link>
-            </div>
-          </div>
-
-          {/* Contact Us - hidden on mobile */}
-          <Link
-            href="/contact"
-            className=" bg-[#fae190] shadow-[3px_5px_#f1ae19] text-blue-900 font-semibold px-5 py-2 rounded-full hover:bg-yellow-300"
-          >
-            Contact Us
-          </Link>
-        </div>
-      </div>
-
-      {/* Second Row */}
-      <div
-        className={`header-lower bg-white transition-all duration-300 ease-in-out ${
-          isSticky
-            ? "fixed top-0 left-0 right-0 shadow-md z-40"
-            : "relative translate-y-[-10px]"
-        }`}
-      >
-        <div className="w-[70%] mx-auto flex items-center justify-between inner-container py-3">
+    <header className="fixed top-0 left-0 right-0 z-40 bg-blue-theme shadow-md transition-all duration-300 ease-in-out">
+      
+        <div className="w-[90%] mx-auto flex items-center justify-between py-1">
           {/* Logo */}
           <div className="flex space-x-2 logo">
             <Logo />
           </div>
           
           {/* Desktop Navigation - hidden on mobile */}
-          <div className="lower-menu hidden md:flex items-center justify-end space-x-8 px-6 text-gray-700 font-normal text-lg font-[Montserrat] text-blue-theme">
-            <Link href="/members">Members</Link>
-            <Link href="/employers">Employers</Link>
-            <Link href="/brokers">Brokers</Link>
-            <Link href="/associations">Associations</Link>
-            <Link href="/community">Unify Community</Link>
+          <div className="lower-menu hidden md:flex items-center justify-end space-x-8 font-normal text-lg font-[Montserrat] text-white">
+            <Link href="/how-it-works">How It Works</Link>
+            <Link href="/individuals">Individuals</Link>
+            <Link href="/business">Business</Link>
+            <Link href="/doctors">Doctors</Link>
+            <Link href="/plans">Plans</Link>
           </div>
 
           {/* Mobile Hamburger Button - visible only on mobile */}
@@ -128,9 +60,6 @@ export default function Header() {
             </svg>
           </button>
         </div>
-      </div>
-
-      {isSticky && <div className="h-[80px]" />}
       
       {/* Mobile Menu */}
       <div className="">

@@ -16,11 +16,11 @@ const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({
 }) => {
   return (
     <section className="w-[90%] mx-auto px-6 py-16 case-stud-sec">
-      <h2 className="title text-[42px] font-[Lato] font-semibold text-[#293568] mb-2">
+      <h2 className="title text-[42px] font-[Lato] text-center mb-2">
         {title}
       </h2>
       <p className="subtitle text-2xl text-light-blue-theme mb-6">{subtitle}</p>
-      <p className="subtitle text-2xl text-gray-800 mb-4">{paragraphs}</p>
+      <p className="paragraphs text-2xl text-gray-800 mb-4">{paragraphs}</p>
     </section>
   );
 };

@@ -30,7 +30,7 @@ export default function BenefitListSection({
       <div className="px-6">
         {/* Title */}
         {title && (
-          <h2 className="text-[42px] font-[Lato] text-gray-900 mb-2 leading-none title">
+          <h2 className="text-[42px] font-[Lato] text-blue-theme mb-2 leading-none title font-bold">
             {title}
           </h2>
         )}

@@ -7,7 +7,7 @@ export default function Logo({ href = "/" }: { href?: string }) {
   return (
     <Link href={href} className="flex items-center space-x-2">
       <Image
-        src="/images/US_logo_website.png"
+        src="/images/US_logo_website_white.png"
         alt="Unify Healthcare"
         width={300}
         height={66}

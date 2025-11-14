@@ -5,9 +5,9 @@ import AboutSection from "@/components/txtButnBgSection";
 import CareNavigation from "@/components/textBgImgSection";
 import ContactSection from "@/components/contactMapSection";
 
-export default function MembersPage() {
+export default function HowItWorks() {
   return (
-    <main className="members-page">
+    <main className="howitworks-page">
       <Hero
         headline="Simply Smart Affordable Alternatives to Rising Healthcare Costs"
         subheading="It's time for Smart Affordable Healthcare"

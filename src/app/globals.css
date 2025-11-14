@@ -24,13 +24,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Raleway, Arial, Helvetica, sans-serif;
-}
-.header-top {
-  padding-top: 8px;
-  padding-bottom: 22px;
-}
-.header-lower {
-  padding-top: 10px;
+  margin: 0;
 }
 .lower-menu a:hover {
   color: #597cbc;
@@ -64,7 +58,7 @@ textarea {
 .footer-text {
   font-size: 16px;
 }
-.members-page {
+.howitworks-page {
   .carenav-img {
     width: 50%;
   }
@@ -79,13 +73,7 @@ textarea {
     margin-bottom: 40px;
   }
 }
-.employers-page {
-  .hero-section {
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 0;
-    padding-right: 100px;
-  }
+.individuals-page {
   .carenav-left {
     width: 60%;
   }
@@ -103,7 +91,7 @@ textarea {
     width: 550px;
   }
 }
-.brokers-page {
+.business-page {
   .swap-col-section {
     margin-top: 20px;
   }
@@ -115,7 +103,7 @@ textarea {
     background-position: right center;
   }
 }
-.associations-page {
+.doctors-page {
   .hero-section {
     display: flex;
     justify-content: flex-end;
@@ -131,7 +119,7 @@ textarea {
     margin: auto;
   }
 }
-.community-page {
+.plans-page {
   .hero-con {
     visibility: hidden;
   }
@@ -149,16 +137,12 @@ textarea {
     padding-bottom: 30px;
   }
 }
-/* hide temporary */
-.header-top, .footer-resources, .footer-company, .footer-mobile-app, .footer-social, .resources-section {
-  display: none;
-}
 
 @media only screen and (max-width: 1680px) {
   .hero-con {
     width: 50%;
   }
-  .members-page .carenav-cont {
+  .howitworks-page .carenav-cont {
     margin-top: 80px;
   }
 }
@@ -166,7 +150,7 @@ textarea {
   .hero-con {
     width: 52%;
   }
-  .employers-page {
+  .individuals-page {
     .carenav-left, .carenav-img {
       width: 50%;
     }
@@ -179,18 +163,18 @@ textarea {
   .hero-con {
     width: 60%;
   }
-  .employers-page .carenav-left {
+  .individuals-page .carenav-left {
     padding: calc(var(--spacing) * 14);
   }
 }
 @media only screen and (max-width: 1366px) {
-  .members-page .carenav-img {
+  .howitworks-page .carenav-img {
     width: 60%;
   }
-  .employers-page .employer-left-col {
+  .individuals-page .employer-left-col {
     padding: calc(var(--spacing) * 10);
   }
-  .employers-page .carenav-left {
+  .individuals-page .carenav-left {
     padding: calc(var(--spacing) * 10);
   }
 }
@@ -240,9 +224,6 @@ textarea {
   .lower-menu a {
     font-size: 15px;
   }
-  .header-top *{
-    font-size: 15px;
-  }
   .hero-section {
     background-position-x: right;
   }
@@ -274,10 +255,10 @@ textarea {
   .footer-bottom p {
     font-size: 18px;
   }
-  .members-page .hero-section {
+  .howitworks-page .hero-section {
     background-position-x: 70%;
   }
-  .employers-page {
+  .individuals-page {
     .employer-right-col {
       height: 400px;
     }
@@ -292,7 +273,7 @@ textarea {
       padding: calc(var(--spacing) * 5);
     }    
   }
-  .brokers-page {
+  .business-page {
     .text-col {
       padding: calc(var(--spacing) * 10);
     }
@@ -303,7 +284,7 @@ textarea {
       padding-top: 0;
     }
   }
-  .associations-page {
+  .doctors-page {
     .hero-section {
       background-position-x: center;
       padding-right: 0;
@@ -415,7 +396,7 @@ textarea {
   .telehealth-sect {
     padding-bottom: 0;
   }
-  .members-page {
+  .howitworks-page {
     .abtsection {
       margin-top: 0;
     }
@@ -429,7 +410,7 @@ textarea {
       height: 350px;
     }
   }
-  .employers-page {
+  .individuals-page {
     .employer-right-col {
       height: 260px;
     }
@@ -455,4 +436,8 @@ textarea {
   .hm-contact-map {
     height: 400px;
   }
+}
+/* page hide temp */
+.howitworks-page, .business-page, .doctors-page, .plans-page {
+  display: none;
 }

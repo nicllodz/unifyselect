@@ -4,9 +4,9 @@ import BenefitListSection from "@/components/listIconSection";
 import ContactSection from "@/components/contactMapSection";
 import HmCopays from "@/components/titleTxtBgIconSection";
 
-export default function BrokersPage() {
+export default function BusinessPage() {
   return (
-    <main className="brokers-page">
+    <main className="business-page">
       <Hero
         headline="Win More Clients and Grow Your Brokerage"
         subheading="Healthcare Plans built on Direct Patient Care"

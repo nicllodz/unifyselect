@@ -7,9 +7,9 @@ import MemberProviderCallouts from "@/components/memberProviderCallouts";
 import StackedImageContent from "@/components/contentBigImg";
 // import FeatureGrid from "@/components/featureGrid";
 
-export default function CommunityPage() {
+export default function PlansPage() {
   return (
-    <main className="community-page">
+    <main className="plans-page">
       <Hero
         headline="Unify Healthcare™ for Associations"
         subheading="Affordable Medical Plans to enhance the value of your membership"

@@ -6,9 +6,9 @@ import HmCopays from "@/components/titleTxtBgIconSection";
 import BusinessSolutionsGrid from "@/components/muliGridContentSection";
 import AboutSection from "@/components/txtButnBgSection";
 
-export default function AssociationsPage() {
+export default function DoctorsPage() {
   return (
-    <main className="associations-page">
+    <main className="doctors-page">
       <Hero
         headline="Unify Healthcare™ for Associations"
         subheading="Affordable Medical Plans to enhance the value of your membership"

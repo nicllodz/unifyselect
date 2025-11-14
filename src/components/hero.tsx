@@ -16,47 +16,32 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({
   headline = "Making Healthcare Affordable for Everyone",
-  subheading = "",
+  subheading = "Direct, transparent care designed for you — not your insurance company",
   ctaText = "",
   bgImageSrc = "/images/healthcare3.webp",
-  showButtons = true,
+  showButtons = false,
 }) => {
   return (
-    <section className="relative bg-cover bg-top pl-[200px] bg-no-repeat hero-section " 
+    <section className="relative bg-cover bg-top pl-[100px] bg-no-repeat hero-section " 
       style={{ backgroundImage: `url(${bgImageSrc})` }}>      
 
-      <div className="hero-con text-white bg-black/40 h-full px-[80px] w-[44%] flex flex-col justify-center py-40">
-        <h1 className="text-4xl md:text-5xl font-bold mb-3 leading-tight">
+      <div className="hero-con text-white bg-black/40 h-full px-[80px] w-[44%] min-h-[calc(100vh-147px)] flex flex-col justify-center">
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-10">
           {headline}
         </h1>
-        <h2 className="text-lg md:text-2xl mb-10 font-bold">
+        <h2 className="text-lg md:text-2xl mb-10">
           {subheading}
         </h2>
         <p className="inline-block text-white rounded-md transition md:text-2xl pr-[50px]">
           {ctaText}
         </p>
-        {showButtons && (<div className="flex gap-8 mt-8 hero-btns">
+        {showButtons && (<div className="flex gap-8 mt-20 hero-btns">
           {/* First button */}
           <Link
             href="/#grid-section-solution"
-            className="hero-btn-1 flex items-center gap-2 px-10 py-3 bg-white text-light-blue-theme rounded-3xl"
+            className="hero-btn flex items-center gap-2 px-20 py-6 bg-white text-light-blue-theme rounded-3xl text-2xl font-extrabold font-[Lato]"
           >
-            <Image
-              src="/images/icon-shield-heart-edited.png"
-              alt="Check"
-              width={40}
-              height={40}
-            />
-            Learn How We Help
-          </Link>
-
-          {/* Second button */}
-          <Link
-            href="/#contact-us"
-            className="hero-btn-2 flex items-center gap-2 py-2 text-blue-theme rounded-full bg-[#fae190] shadow-[3px_5px_#f1ae19] 
-              font-bold px-18 text-lg">
-              Sign Up Today
-              {/* <Image src="/icons/arrow.png" alt="Arrow" width={20} height={20} /> */}
+            Join Now
           </Link>
         </div>)}
       </div>
