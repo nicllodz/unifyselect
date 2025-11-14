@@ -23,7 +23,7 @@ export default function IndividualsPage() {
         subheading=""
         body={
             <>
-                In your first visit you'll meet your doctor and care team for 60 minutes - compared to the average 
+                In your first visit you&apos;ll meet your doctor and care team for 60 minutes - compared to the average 
                 Family Practice physician who spends about 8 minutes with each patient. Your doctor will focus on your goals, 
                 answer questions and create your health profile. Most of all the doctor will spend as long as needed to listen, 
                 explain, and treat your problem.
@@ -50,12 +50,12 @@ export default function IndividualsPage() {
         body={
             <>
                 <div className="text-light-blue-theme font-bold">Unlimited access to your doctor</div> 
-                Literally. After hours, weekends, holidays, etc. We understand healthcare need doesn't just occur during 
+                Literally. After hours, weekends, holidays, etc. We understand healthcare need doesn&apos;t just occur during 
                 standard business hours.
 
                 <div className="text-light-blue-theme font-bold mt-3">Same day and next-day service</div> 
                 Because our physician has reserved their time for a select few, there will be no "squeezing you in." 
-                You're a priority, and you'll feel like one.
+                You&apos;re a priority, and you&apos;ll feel like one.
 
                 <div className="text-light-blue-theme font-bold mt-3">Concierge Service</div> 
                 Every member gets access to a care team made up of a nurse, and three care coordinators. 
